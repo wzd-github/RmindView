@@ -1,0 +1,2 @@
+# RmindView
+RemindView similar UIAlertView
