@@ -24,6 +24,7 @@
 -(void)dealloc
 {
     printf("dealloc--dealloc--dealloc--dealloc--dealloc--dealloc!!!!!!!!!!!!\n");
+    printf("上传－0.0.2-版本!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
 }
 
 -(instancetype)initTitle:(NSString*)title andMessage:(NSString*)message
