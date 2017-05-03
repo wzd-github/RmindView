@@ -15,8 +15,8 @@ Pod::Spec.new do |s|
   #  summary should be tweet-length, and the description more in depth.
   #
 
-  s.name         = "remindview"
-  s.version      = "0.0.2"
+  s.name         = "RemindView"
+  s.version      = "0.0.3"
   s.summary      = "A remind view used on iOS."
 
   # This description is used to generate tags and improve search results.
@@ -130,8 +130,12 @@ Pod::Spec.new do |s|
   #  where they will only apply to your library. If you depend on other Podspecs
   #  you can include multiple dependencies to ensure it works.
 
-  # s.requires_arc = true
-
+  s.requires_arc = true
+	
+  s.subspec 'PingObserver' do |pingObserver|
+	pingObserver.source_files =  "RemindView", "PingObserver/**/*.{h,m}"
+	pingObserver.public_header_files =  "RemindView/**/*.h"  
+  end
   # s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
   # s.dependency "JSONKit", "~> 1.4"
 
