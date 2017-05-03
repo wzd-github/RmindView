@@ -133,7 +133,7 @@ Pod::Spec.new do |s|
   s.requires_arc = true
 	
   s.subspec 'PingObserver' do |pingObserver|
-	pingObserver.source_files =  "RemindView", "RemindView/PingObserver/**/*.{h,m}"
+	pingObserver.source_files =  "PingObserver", "remindView/PingObserver/**/*.{h,m}"
   #	pingObserver.public_header_files =  "RemindView/**/*.h"  
   end
   # s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
