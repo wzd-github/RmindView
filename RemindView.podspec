@@ -134,7 +134,7 @@ Pod::Spec.new do |s|
 	
   s.subspec 'PingObserver' do |pingObserver|
 	pingObserver.source_files =  "PingObserver", "remindView/PingObserver/**/*.{h,m}"
-  #	pingObserver.public_header_files =  "RemindView/**/*.h"  
+  	pingObserver.public_header_files =  "PingObserver/PlayerPing.h"  
   end
   # s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
   # s.dependency "JSONKit", "~> 1.4"
